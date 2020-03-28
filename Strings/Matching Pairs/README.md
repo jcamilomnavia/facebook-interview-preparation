@@ -20,7 +20,9 @@ Return an integer denoting the maximum number of matching pairs
 ### Example
 
 **s** = "abcd"
+
 **t** = "adcb"
+
 **output** = 4
 
 ### Explanation:

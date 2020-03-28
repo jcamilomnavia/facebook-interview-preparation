@@ -18,6 +18,7 @@ An array where each index i contains an integer denoting the maximum number of c
 
 ### Example:
 **a** = [3, 4, 1, 6, 2]
+
 **output** = [1, 3, 1, 5, 1]
 
 ### Explanation:

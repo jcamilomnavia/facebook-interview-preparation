@@ -15,7 +15,9 @@ Return "Yes" if **B** can be made equal to **A**, return "No" otherwise.
 ### Example
 
 A = [1, 2, 3, 4]
+
 B = [1, 4, 3, 2]
+
 output = true
 
 After reversing the subarray of **B** from indices 1 to 3, array **B** will equal array **A**.

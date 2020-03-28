@@ -1,12 +1,51 @@
 // Add any extra import statements you may need here
+function equalString(s){
+  for(let i=0; i < s.length ;i++){
+    let re = new RegExp(s[i])
+    if(s.match(re).length >= 2){
+      return s.length
+    }
+  }
+return s.length-2
+}
+
+function compareAllChars(s,t){
+let cont = 0
+let flag = false
+let charPosition
+for(let j=0; j < t.length ;j++){
+  if(t[j] == s[j]){
+    cont++
+  }
+  else{
+    if (flag){
+      if(charPosition == j){
+        cont++
+      }
+    } 
+    else{
+      charPosition = s.indexOf(t[j])
+      if (t[charPosition] === s[j]){
+        flag =true
+        cont++
+      }
+    }
+  }
+}
+return cont
+}
 
 // Add any helper functions you may need here
 
 function matchingPairs(s, t) {
-  // Write your code here
-  // Can only exchange two indexes of s to make similar of t
-  // How to check this? Permutations? Too waste of time maybe
-  // 
+// Write your code here
+let numMatch
+if(s === t){
+  numMatch = equalString(s)
+} else {
+  numMatch = compareAllChars(s,t)
+}
+return numMatch
 }
 
 
@@ -21,29 +60,29 @@ function matchingPairs(s, t) {
 // These are the tests we use to determine if the solution is correct.
 // You can add your own at the bottom, but they are otherwise not editable!
 function printInteger(n) {
-  var out = '[' + n + ']';
-  return out;
+var out = '[' + n + ']';
+return out;
 }
 
 var test_case_number = 1;
 
 function check(expected, output) {
-  var result = (expected == output);
-  var rightTick = "\u2713";
-	var wrongTick = "\u2717";
-  if (result) {
-  	var out = rightTick + ' Test #' + test_case_number;
-  	console.log(out);
-  }
-  else {
-  	var out = '';
-  	out += wrongTick + ' Test #' + test_case_number + ': Expected ';
-  	out += printInteger(expected);
-  	out += ' Your output: ';
-  	out += printInteger(output);
-  	console.log(out);
-  }
-  test_case_number++;
+var result = (expected == output);
+var rightTick = "\u2713";
+var wrongTick = "\u2717";
+if (result) {
+  var out = rightTick + ' Test #' + test_case_number;
+  console.log(out);
+}
+else {
+  var out = '';
+  out += wrongTick + ' Test #' + test_case_number + ': Expected ';
+  out += printInteger(expected);
+  out += ' Your output: ';
+  out += printInteger(output);
+  console.log(out);
+}
+test_case_number++;
 }
 
 var s_1 = "abcde";

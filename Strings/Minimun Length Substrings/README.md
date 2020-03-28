@@ -17,7 +17,9 @@ Return the minimum length of the substring of s. If it is not possible, return -
 ### Example
 
 s = "dcbefebce"
-t = "fd"'
+
+t = "fd"
+
 output = 5
 
 ### Explanation:
