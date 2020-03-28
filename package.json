@@ -1,0 +1,11 @@
+{
+  "name": "facebook-coding-practice",
+  "version": "1.0.0",
+  "description": "Facebook university recruiting coding exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jcamilomnavia",
+  "license": "ISC"
+}
