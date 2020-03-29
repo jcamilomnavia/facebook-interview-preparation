@@ -44,7 +44,6 @@ function minLengthSubstring(s, t) {
   let arrayS = s.split("")
 
   return compareChars(arrayS,arrayT,minIndex,maxIndex,index)
-
 }
 
 

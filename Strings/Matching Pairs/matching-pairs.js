@@ -1,4 +1,3 @@
-// Add any extra import statements you may need here
 function equalString(s){
   for(let i=0; i < s.length ;i++){
     let re = new RegExp(s[i])
@@ -35,10 +34,7 @@ for(let j=0; j < t.length ;j++){
 return cont
 }
 
-// Add any helper functions you may need here
-
 function matchingPairs(s, t) {
-// Write your code here
 let numMatch
 if(s === t){
   numMatch = equalString(s)
